@@ -60,7 +60,6 @@ mod_offset = 2 * np.pi * args.mod_offset
 tms = ts + mod_offset
 if args.mod_freq is not None:
     mod_range = args.mod_range * np.pi
-    print(mod_range)
     tm = np.linspace(
         0,
         2 * np.pi * args.mod_freq * args.time,
